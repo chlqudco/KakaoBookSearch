@@ -12,11 +12,7 @@
         tools:layout="@layout/fragment_favorite" >
         <action
             android:id="@+id/action_fragment_favorite_to_fragment_book"
-            app:destination="@id/fragment_book"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            app:destination="@id/fragment_book"/>
     </fragment>
     <fragment
         android:id="@+id/fragment_search"
@@ -25,11 +21,7 @@
         tools:layout="@layout/fragment_search" >
         <action
             android:id="@+id/action_fragment_search_to_fragment_book"
-            app:destination="@id/fragment_book"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            app:destination="@id/fragment_book"/>
     </fragment>
     <fragment
         android:id="@+id/fragment_settings"
