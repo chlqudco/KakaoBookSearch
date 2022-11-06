@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "KakaoBookSearch"
-include ':app'
+include(":app")

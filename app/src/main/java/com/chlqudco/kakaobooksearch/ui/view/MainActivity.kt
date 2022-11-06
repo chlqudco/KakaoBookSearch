@@ -3,7 +3,6 @@ package com.chlqudco.kakaobooksearch.ui.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,24 +10,32 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.chlqudco.kakaobooksearch.R
-import com.chlqudco.kakaobooksearch.data.repository.BookSearchRepositoryImpl
 import com.chlqudco.kakaobooksearch.databinding.ActivityMainBinding
-import com.chlqudco.kakaobooksearch.ui.viewmodel.BookSearchViewModel
-import com.chlqudco.kakaobooksearch.ui.viewmodel.BookSearchViewModelProviderFactory
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     //뷰바인딩
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     //뷰모델
-    lateinit var bookSearchViewModel: BookSearchViewModel
+    //lateinit var bookSearchViewModel: BookSearchViewModel
 
     //내비게이션 컨트롤러
     private lateinit var navController: NavController
 
     //앱바
     private lateinit var appBarConfiguration: AppBarConfiguration
+
+    //dataStore
+    //힐트 안쓴 방식
+    //private val Context.dataStore by preferencesDataStore(DATASTORE_NAME)
+    //힐트 사용 방식
+
+
+    //워크매니저
+    //private val workManager = WorkManager.getInstance(application)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,15 +51,18 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null){
             binding.bottomNavigationView.selectedItemId = R.id.fragment_search
         }
-
  */
 
         setupJetpackNavigation()
 
         //뷰모델 초기화 하기
-        val bookSearchRepository = BookSearchRepositoryImpl()
-        val factory = BookSearchViewModelProviderFactory(bookSearchRepository, this)
-        bookSearchViewModel = ViewModelProvider(this, factory)[BookSearchViewModel::class.java]
+        //힐트 써서 다 바꿔야 함
+
+//        val database = BookSearchDatabase.getInstance(this)
+//        val bookSearchRepository = BookSearchRepositoryImpl(database, dataStore )
+//        val factory = BookSearchViewModelProviderFactory(bookSearchRepository, workManager, this)
+//        bookSearchViewModel = ViewModelProvider(this, factory)[BookSearchViewModel::class.java]
+
     }
 
     //바텀내비와 젯팩내비 연동하기

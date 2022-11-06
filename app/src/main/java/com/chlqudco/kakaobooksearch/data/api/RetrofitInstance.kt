@@ -1,12 +1,8 @@
 package com.chlqudco.kakaobooksearch.data.api
 
-import com.chlqudco.kakaobooksearch.util.Constants.BASE_URL
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
-
 //하나의 오브젝트만 만들어지도록 싱글턴으로 구현
+//힐트를 사용한 시점으로 얘는 필요가 없어짐
+/*
 object RetrofitInstance {
 
     //이걸 레트로핏에 등록하면 로그캣에서 응답을 확인할 수 있음
@@ -32,3 +28,4 @@ object RetrofitInstance {
         retrofit.create(BookSearchApi::class.java)
     }
 }
+*/
