@@ -1,23 +1,42 @@
 ## 인프런 강의 클론코딩 프로젝트 입니다.
 
 - 개발 배경
-
+	- 제대로 아는 것도 없으면서 새로 배우는 것에만 목매고 있는 최병채. 인터넷의 대부분 강의는 기초적인 내용이라 재미 없는 와중, 인프런의 이 강의를 발견했다.
+	- MAD. Modern Android Development 의 줄임말. 말만 들어도 미칠것만 같아 바로 수강했다. 이미 아는 내용이 많았지만 그래도 어느정도 새로 배우는 것과 하나의 완성된 앱을 만드는 것에 굉장한 흥미를 느꼈다.
+	- 근데 Compose를 배우기엔 아직 갈길이 멀다. 이젠 아는것 부터 제대로 갈고 닦자.
+	- 나는 클론 코딩으로 공부하는게 그렇게 재밌다. 개념과 사용법을 한번에 배울 수 있으니 얼마나 행복한가.
+	
+---
 - 앱 설명
+	- KaKao Open Api를 이용해 도서 검색을 하는 앱이다.
+	- 검색 창을 통해 원하는 검색어로 책을 검색 할 수 있습니다.
+	- 책을 클릭하면 상세페이지로 넘어가며, 즐겨찾기 한 책을 관리할 수 있습니다.
+	- 설정 창에서 정확도순, 최근순 정렬을 지정할 수 있고, 캐시 삭제도 할 수 있습니다.
+
+---
 
 - 화면 예시
 - ![KakaoTalk_20221110_192742632_02](https://user-images.githubusercontent.com/68932465/201067912-2c0a2a91-db0a-464a-8eca-86a79c2607ab.jpg)
-- ![KakaoTalk_20221110_192742632](https://user-images.githubusercontent.com/68932465/201067915-7ad0b088-ea01-4c5d-a8b0-9d809d067416.jpg)
-- ![KakaoTalk_20221110_192742632_01](https://user-images.githubusercontent.com/68932465/201067918-c9cbba44-5bda-4fe0-947b-417fdeaa2694.jpg)
+![KakaoTalk_20221110_192742632](https://user-images.githubusercontent.com/68932465/201067915-7ad0b088-ea01-4c5d-a8b0-9d809d067416.jpg)
+![KakaoTalk_20221110_192742632_01](https://user-images.githubusercontent.com/68932465/201067918-c9cbba44-5bda-4fe0-947b-417fdeaa2694.jpg)
 
 ---
 
 - 사용한 기술
-
-- 배운 것들
+	- Android App Architecture
+	- Android Jetpack Navigation, WorkManager, Room DB, Paging
+	- Coroutine Flow
+	- Hilt
 
 ---
 
-
+- 배운 것들
+	- - MAD(Modern Android Development)를 통해 안드로이드의 최신 기술을 익힐 수 있었다.
+	- 끊임없이 진화하는 안드로이드의 발전 속도가 부담스럽기도 하지만 그만큼 배울 것이 많아서 신난다.
+	- 하나의 기술을 한번에 익히는건 불가능하다. 여러번 곱씹어가며 제대로 익혀나가야겠다.
+	- 생각치 못한 에러가 많이 생겼었다. jetpack의 버전 이슈가 가장 머리 아팠었다.
+	
+---
 
 개발 순서
 
