@@ -5,10 +5,18 @@
 - 앱 설명
 
 - 화면 예시
+- ![KakaoTalk_20221110_192742632_02](https://user-images.githubusercontent.com/68932465/201067912-2c0a2a91-db0a-464a-8eca-86a79c2607ab.jpg)
+- ![KakaoTalk_20221110_192742632](https://user-images.githubusercontent.com/68932465/201067915-7ad0b088-ea01-4c5d-a8b0-9d809d067416.jpg)
+- ![KakaoTalk_20221110_192742632_01](https://user-images.githubusercontent.com/68932465/201067918-c9cbba44-5bda-4fe0-947b-417fdeaa2694.jpg)
+
+---
 
 - 사용한 기술
 
 - 배운 것들
+
+---
+
 
 
 개발 순서
